@@ -38,9 +38,9 @@ public class Triangulo extends Figura_2D{
 
     }
 
-
-    public void mostrardatos(){
-       mostrar_datos();
+    @Override
+    public void mostrarInf(){
+       super.mostrarInf();
         System.out.println("El área del "+nombre+" es de: "+ calcular_area()+" \n");
         System.out.println("El perímetro del "+nombre+" es de: " + calcular_perimetro());
     }
