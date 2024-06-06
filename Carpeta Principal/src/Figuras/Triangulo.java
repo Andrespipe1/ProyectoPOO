@@ -34,7 +34,7 @@ public class Triangulo extends Figura_2D{
 
 
     public double calcular_perimetro(){
-        return 3*Nlados;
+        return 3*NLados;
 
     }
 

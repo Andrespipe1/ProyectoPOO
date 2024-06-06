@@ -1,18 +1,18 @@
 package Figuras;
 
-class Nlados extends Otros {
+class NLados extends Otros {
     public int cantidadLados;
 
     // Constructor
-    public Nlados(double area, double perimetro, String tipo, String nombre, int cantidadLados) {
-        super(area, perimetro, tipo, nombre);
+    public NLados( int NLados, String nombre,double area,double perimetro, String tipo, double apotema,double largolado, int cantidadLados) {
+        super( NLados,  nombre, area, perimetro,  tipo,  apotema, largolado);
         this.cantidadLados = cantidadLados;
     }
 
   
-    @Override
-    public double mostrar_datos(){
-        mostrar_datos();
+    //@Override
+    public void mostrarinf(){
+        mostrarinf();
         System.out.println("La figura tiene: "+cantidadLados);
         
     }

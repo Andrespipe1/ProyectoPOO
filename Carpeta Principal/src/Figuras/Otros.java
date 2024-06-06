@@ -2,21 +2,22 @@ package Figuras;
 
 public class Otros extends Regulares {
     public double apotema;
+    public double largolado;
 
-    public Otros(int nlados, String nombre,double area,double perimetro, double lado, double apotema){
-        super(nlados,nlados,area,perimetro,lado);
+    public Otros(int NLados, String nombre,double area,double perimetro, String tipo, double apotema,double largolado){
+        super(NLados, nombre,area,perimetro,tipo);
         this.apotema = apotema;
+        this.largolado = largolado;
 
 
     }
 
-    @Override
     public double calcular_perimetro(){
-        return lado*nlados;
+        return largolado*NLados;
 
     }
 
-    @Override
+
     public double calcular_area(){
         return (perimetro*apotema)/2;
 
@@ -29,3 +30,4 @@ public class Otros extends Regulares {
         System.out.println("El perimetro del "+nombre+" es de: "+calcular_perimetro());
 
     }
+}

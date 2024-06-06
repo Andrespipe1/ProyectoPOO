@@ -11,6 +11,6 @@ public class Figura_2D extends Figuras_Geometricas{
     @Override
         public void mostrarInf(){   
         super.mostrarInf();
-        System.out.println("-Area: "+area+"\n-Perímetrto: "+perimetro);
+
     }
 }

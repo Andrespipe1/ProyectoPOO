@@ -4,8 +4,8 @@ class Circulo extends Otros {
     public double radio;
 
     // Constructor
-    public Circulo(double area, double perimetro, String tipo, String nombre, double radio) {
-        super(area, perimetro, tipo, nombre);
+    public Circulo(int NLados, String nombre,double area,double perimetro, String tipo,  double apotema,double largolado,double radio) {
+        super( NLados, nombre, area, perimetro, tipo,apotema,largolado);
         this.radio = radio;
     }
 
@@ -17,20 +17,15 @@ class Circulo extends Otros {
 
     @Override
     public double calcular_area(){
-        return (3.1416*radio)**2;
+        return (3.1416*radio)*(3.1416*radio);
 
     }
 
     @Override
     public void mostrarInf(){
-        super.mostrarInf();
         System.out.println("El area del "+nombre+" es de: "+calcular_area());
         System.out.println("El perimetro del "+nombre+" es de: "+calcular_perimetro());
-
-    }
-
-  
-    public void imprimirRadio() {
         System.out.println("El radio es de: "+radio);
     }
+
 }

@@ -11,7 +11,7 @@ public class Cuadrilatero extends Regulares{
         this.lado2 = lado2;
         this.lado3 = lado3;
     }
-    public void calcular_area(){
+    public double calcular_area(){
         if (nombre.equals("Cuadrado")){
             area= lado1*lado1;
         }else if(nombre.equals("Triangulo")){
@@ -21,23 +21,26 @@ public class Cuadrilatero extends Regulares{
             area = lado1*lado2;
 
         }
+        return area;
 
     }
 
-    public  void  calcular_perimetro(){
+    public  double  calcular_perimetro(){
         if (nombre.equals("Triangulo")){
             perimetro = lado1+lado2+lado3;
 
         }else {
             perimetro = 2*(lado1+lado2);
         }
-        System.out.println("El perimetro del "+nombre+" es de: "+perimetro+"\n");
+
+
+        return perimetro;
 
     }
 
     @Override
     public void mostrarInf() {
-        System.out.println("El area del " + nombre + " es de: " + area + "\n"+"El perimetro es de: "+perimetro+"\n");
+        System.out.println("El area del " + nombre + " es de: " + calcular_area() + "\n"+"El perimetro es de: "+calcular_perimetro()+"\n");
     }
 }
 

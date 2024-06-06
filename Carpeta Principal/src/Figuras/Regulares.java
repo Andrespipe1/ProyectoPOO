@@ -9,6 +9,6 @@ class Regulares extends Figura_2D {
     }
     @Override
     public void mostrarInf() {
-        System.out.println(+"\n"+"Tipo: " + tipo);
+        System.out.println("\n"+"Tipo: " + tipo);
     }
 }
