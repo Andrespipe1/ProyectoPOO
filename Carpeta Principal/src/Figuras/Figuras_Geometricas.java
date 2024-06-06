@@ -7,8 +7,8 @@ public class Figuras_Geometricas {
         this.NLados=NLados;
         this.nombre=nombre;
     }
-    public void mostrarDatos(){
-        System.out.println("---Figura---\nNombre: "+nombre+"\nNLados: "+NLados);
+    public void mostrarInf(){
+        System.out.println("---Figura---\n-Nombre: "+nombre+"\n-NLados: "+NLados);
     }
 }
 
