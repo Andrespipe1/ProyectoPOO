@@ -7,8 +7,8 @@ class Regulares extends Figura_2D {
         super(NLados,nombre,area, perimetro);
         this.tipo = tipo;
     }
-
-    public void imprimirTipo() {
+    @Override
+    public void mostrarInf() {
         System.out.println("Tipo: " + tipo);
     }
 }
