@@ -9,7 +9,8 @@ public class Figura_2D extends Figuras_Geometricas{
         this.perimetro=perimetro;
     }
     @Override
-        public void mostrarInf(){
+        public void mostrarInf(){   
+        super.mostrarInf();
         System.out.println("-Area: "+area+"\n-Perímetrto: "+perimetro);
     }
 }
