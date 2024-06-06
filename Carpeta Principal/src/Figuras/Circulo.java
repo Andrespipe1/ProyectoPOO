@@ -22,8 +22,8 @@ class Circulo extends Otros {
     }
 
     @Override
-    public double mostrar_datos(){
-        mostrar_datos();
+    public void mostrarInf(){
+        super.mostrarInf();
         System.out.println("El area del "+nombre+" es de: "+calcular_area());
         System.out.println("El perimetro del "+nombre+" es de: "+calcular_perimetro());
 
