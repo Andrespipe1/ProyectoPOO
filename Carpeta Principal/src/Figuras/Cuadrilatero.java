@@ -1,12 +1,12 @@
 package Figuras;
 
-public class Cuadrilatero extends Figura_2D{
+public class Cuadrilatero extends Regulares{
   public double lado1;
     public double lado2;
     public double lado3;
 
-    public  Cuadrilatero(int NLados, String nombre, double area, double perimetro, double lado1,double lado2,double lado3){
-        super(NLados,nombre,area,perimetro);
+    public  Cuadrilatero(int NLados, String nombre, double area, double perimetro,String tipo, double lado1,double lado2,double lado3){
+        super(NLados,nombre,area,perimetro,tipo);
         this.lado1 = lado1;
         this.lado2 = lado2;
         this.lado3 = lado3;
@@ -23,6 +23,7 @@ public class Cuadrilatero extends Figura_2D{
         }
 
     }
+
     public  void  calcular_perimetro(){
         if (nombre.equals("Triangulo")){
             perimetro = lado1+lado2+lado3;
@@ -39,4 +40,5 @@ public class Cuadrilatero extends Figura_2D{
         System.out.println("El area del " + nombre + " es de: " + area + "\n"+"El perimetro es de: "+perimetro+"\n");
     }
 }
+
 
