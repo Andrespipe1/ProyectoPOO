@@ -37,7 +37,7 @@ public class Cuadrilatero extends Figura_2D{
 
     @Override
     public void mostrarInf() {
-        System.out.println("El area del " + nombre + " es de: " + area + "\n");
+        System.out.println("El area del " + nombre + " es de: " + area + "\n"+"El perimetro es de: "+perimetro+"\n");
     }
 }
 
