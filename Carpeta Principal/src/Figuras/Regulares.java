@@ -1,11 +1,10 @@
 package Figuras;
-
-class Regulares extends Figuras_2D {
+class Regulares extends Figura_2D {
     public String tipo;
 
     // Constructor
-    public Regulares(double area, double perimetro, String tipo) {
-        super(area, perimetro);
+    public Regulares(int NLados,String nombre,double area, double perimetro, String tipo) {
+        super(NLados,nombre,area, perimetro);
         this.tipo = tipo;
     }
 
