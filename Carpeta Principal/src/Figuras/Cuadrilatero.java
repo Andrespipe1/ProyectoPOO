@@ -23,7 +23,6 @@ public class Cuadrilatero extends Figura_2D{
         }
 
     }
-
     public  void  calcular_perimetro(){
         if (nombre.equals("Triangulo")){
             perimetro = lado1+lado2+lado3;
