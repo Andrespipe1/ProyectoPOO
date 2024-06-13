@@ -20,6 +20,7 @@ public class Conciertos extends Evento {
         System.out.println("\nCosto Total Boda: "+monto+" $");
     }
     public void mostrarInfo(){
+        super.mostrarInfo();
         System.out.println("\n"+"------ Concierto ------"+"\n"+"El numero de invitados es:"+numinivtados+"\n"+"Precio de Seguridad: "+seguridad+"\n"+"Precio de Satnd: "+stand);
 
     }

@@ -25,6 +25,7 @@ public class Conferencia extends Evento{
 
     }
     public void mostrarInfo(){
+        super.mostrarInfo();
         System.out.println("\n-------Conferencia--------\nServicio de catering: "+catering+"$ \nEquipo audiovisual: "+live+"\nTipo de Evento: "+tipoEvento);
 
     }

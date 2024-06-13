@@ -21,6 +21,7 @@ public class Bodas extends Evento {
     }
 
     public void mostrarInfo(){
+            super.mostrarInfo();
         System.out.println("\n"+"------ Boda ------"+"\n"+"El numero de invitados es:"+numinivtados+"\nPrecio decoracion de flores: "+decoFlores+"\n"+"Precio Musica en vivo: "+musicaLive);
     }
 }

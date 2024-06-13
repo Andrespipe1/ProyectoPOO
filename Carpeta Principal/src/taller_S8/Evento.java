@@ -13,6 +13,7 @@ public class Evento extends Reservas{
         getCostoBase();
     }
     public void mostrarInfo(){
+        super.mostrarInfo();
         System.out.println("Tipo Evento: "+ tipoEvento);
     }
 

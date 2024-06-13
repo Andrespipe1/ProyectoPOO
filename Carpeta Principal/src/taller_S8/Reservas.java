@@ -32,6 +32,6 @@ public class Reservas{
         getCostoBase();
     }
     public void mostrarInfo(){
-        System.out.println("----RESERVACION----\nDatos cliente\nId:"+getIdCliente()+"Nombre: "+getNombreCliente()+"Fecha reserva: "+getFecha());
+        System.out.println("----RESERVACION----\nDatos cliente\nId:"+getIdCliente()+" Nombre: "+getNombreCliente()+"Fecha reserva: "+getFecha());
     }
 }
