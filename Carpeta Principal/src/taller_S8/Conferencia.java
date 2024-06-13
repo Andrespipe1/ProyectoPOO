@@ -4,6 +4,7 @@ public class Conferencia extends Evento{
     public String nombreConferencia;
     public double catering;
     public double live;
+    //public double monto;
 
     public Conferencia(int idCliente,String nombreCliente, String fecha,double costoBase,String tipoEvento,int idConferencia,String nombreConferencia,double  catering, double live){
         super(idCliente,nombreCliente, fecha,costoBase,tipoEvento);
@@ -11,17 +12,20 @@ public class Conferencia extends Evento{
         this.nombreConferencia=nombreConferencia;
         this.catering=catering;
         this.live=live;
+        //this.monto=monto;
     }
-
+    double monto;
     @Override
 
     public void calcularCosto(){
         getCostoBase();
-        double costoTotal=getCostoBase()+900;
+        double monto = getCostoBase()+1000+catering+live;
+        System.out.println("\nCosto Total Conferencia: "+monto+" $");
+
 
     }
     public void mostrarInfo(){
-        //System.out.println("El costo de la conferencia es: "+a);
+        System.out.println("\n-------Conferencia--------\nServicio de catering: "+catering+"$ \nEquipo audiovisual: "+live);
 
     }
 
