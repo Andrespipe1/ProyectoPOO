@@ -15,7 +15,9 @@ public class Conciertos extends Evento {
     }
 @Override
     public void calcularCosto(){
-        //a+b
+        getCostoBase();
+        double monto = getCostoBase()+1900+seguridad+stand;
+        System.out.println("\nCosto Total Boda: "+monto+" $");
     }
     public void mostrarInfo(){
         System.out.println("\n"+"------ Concierto ------"+"\n"+"El numero de invitados es:"+"\n"+"Precio de Seguridad: "+"\n"+"Precio de Satnd: ");

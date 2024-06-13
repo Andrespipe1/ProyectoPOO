@@ -7,6 +7,9 @@ public class Main {
         Bodas boda2=new Bodas(175427864,"Juan Galo","24/06/2024",100,"Boda",6321,56,500,0);
         Bodas boda3=new Bodas(175427864,"Juan Galo","24/06/2024",100,"Boda",6321,56,0,300);
 
+        Conciertos con1=new Conciertos(2132549875,"Andy Perez","24/06/2024",250,"Concierto",4561,100,0,100);
+        Conciertos con2=new Conciertos(1012324515,"Juan Diaz","29/07/2024",250,"Concierto",4565,56,3000,0);
+        Conciertos con3=new Conciertos(1518974662,"Juan Almeda","30/08/2024",250,"Concierto",4562,201,3000,100);
 
         Conferencia cf1=new Conferencia(175427864,"Andres Galo","24/06/2024",100,"Boda",6321,"asdsad",500,300);
         System.out.println("\tSISTEMA DE RESERVAS\t\nSeleccione un tipo de evento");
@@ -17,6 +20,7 @@ public class Main {
                 case 1:
                     System.out.println("--Evento: Conferencia\n");
                     break;
+
                 case 2:
                     System.out.println("--Evento: Boda\n");
                     System.out.println("Ingrese que tipo de servicio desea Incluir\n");
@@ -41,10 +45,31 @@ public class Main {
                         default:
                             System.out.println("Opción no válida. Por favor, elija una opción del menú.");
                     }
-
                     break;
                 case 3:
                     System.out.println("--Evento: Concierto\n");
+                    System.out.println("Ingrese que tipo de servicio desea Incluir\n");
+                    System.out.println("1) Seguridad \n2)Estand\n3) Ambos\nIngrese una opción:");
+                    int opcion3 =leer.nextInt();
+                    switch (opcion3){
+                        case 1:
+                            System.out.println("Seguridad");
+                            con2.mostrarInfo();
+                            con2.calcularCosto();
+                            break;
+                        case 2:
+                            System.out.println("Stand");
+                            con1.mostrarInfo();
+                            con1.calcularCosto();
+                            break;
+                        case 3:
+                            System.out.println("Ambos servicios seleccionados");
+                            con3.mostrarInfo();
+                            con3.calcularCosto();
+                            break;
+                        default:
+                            System.out.println("Opción no válida. Por favor, elija una opción del menú.");
+                    }
                     break;
                 case 4:
                     cf1.mostrarInfo();
