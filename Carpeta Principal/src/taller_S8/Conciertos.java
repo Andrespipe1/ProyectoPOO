@@ -18,7 +18,7 @@ public class Conciertos extends Evento {
         //a+b
     }
     public void mostrarInfo(){
-        //System.out.println("El costo de la conferencia es: "+a);
+        System.out.println("\n"+"------ Concierto ------"+"\n"+"El numero de invitados es:"+"\n"+"Precio de Seguridad: "+"\n"+"Precio de Satnd: ");
 
     }
 }
