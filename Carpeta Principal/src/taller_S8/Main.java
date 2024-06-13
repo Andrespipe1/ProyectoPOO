@@ -6,14 +6,18 @@ public class Main {
         Bodas boda1=new Bodas(175427864,"Andres Galo","24/06/2024",100,"Boda",6321,56,500,300);
         Bodas boda2=new Bodas(175427864,"Juan Galo","24/06/2024",100,"Boda",6321,56,500,0);
         Bodas boda3=new Bodas(175427864,"Juan Galo","24/06/2024",100,"Boda",6321,56,0,300);
+        Bodas boda4=new Bodas(175427864,"Andrew Galo","24/06/2024",100,"Boda",6321,56,0,0);
 
         Conciertos con1=new Conciertos(2132549875,"Andy Perez","24/06/2024",250,"Concierto",4561,100,0,100);
         Conciertos con2=new Conciertos(1012324515,"Juan Diaz","29/07/2024",250,"Concierto",4565,56,3000,0);
         Conciertos con3=new Conciertos(1518974662,"Juan Almeda","30/08/2024",250,"Concierto",4562,201,3000,100);
+        Conciertos con4=new Conciertos(1518974662,"Juan Almeda","30/08/2024",250,"Concierto",4562,201,0,0);
 
         Conferencia cf1=new Conferencia(175427864,"Andres Galo","24/06/2024",100,"Conferencia",6321,"Conferencia",200,0);
         Conferencia cf2=new Conferencia(175427864,"Andres Galo","24/06/2024",100,"Conferencia",6321,"Conferencia",0,100);
         Conferencia cf3=new Conferencia(175427864,"Andres Galo","24/06/2024",100,"Conferencia",6321,"Conferencia",200,100);
+        Conferencia cf4=new Conferencia(175427864,"Andres Galo","24/06/2024",100,"Conferencia",6321,"Conferencia",0,0);
+
         System.out.println("\tSISTEMA DE RESERVAS\t\nSeleccione un tipo de evento");
         while(true) {
             System.out.println("1) Conferencia\n2) Boda\n3) Concierto\n4)Salir\nIngrese una opcion: ");
@@ -23,7 +27,7 @@ public class Main {
                     System.out.println("--Evento: Conferencia\n");
 
                     System.out.println("Ingrese que tipo de servicio desea Incluir\n");
-                    System.out.println("1) Catering\n2)Equipo Audiovisual\n3) Ambos\nIngrese una opción:");
+                    System.out.println("1) Catering\n2)Equipo Audiovisual\n3) Ambos\n4)Ningun servicio\nIngrese una opción:");
                     int opc1 =leer.nextInt();
                     switch (opc1){
                         case 1:
@@ -41,6 +45,11 @@ public class Main {
                             cf3.mostrarInfo();
                             cf3.calcularCosto();
                             break;
+                        case 4:
+                            cf4.mostrarInfo();
+                            cf4.calcularCosto();
+                            break;
+
                         default:
                             System.out.println("Opción no válida. Por favor, elija una opción del menú.");
                     }
@@ -49,7 +58,7 @@ public class Main {
                 case 2:
                     System.out.println("--Evento: Boda\n");
                     System.out.println("Ingrese que tipo de servicio desea Incluir\n");
-                    System.out.println("1) Decoración Floral\n2)Musica en vivo\n3) Ambos\nIngrese una opción:");
+                    System.out.println("1) Decoración Floral\n2)Musica en vivo\n3) Ambos\n4)Ningun servicio\nIngrese una opción:");
                     int opc =leer.nextInt();
                     switch (opc){
                         case 1:
@@ -67,6 +76,10 @@ public class Main {
                             boda1.mostrarInfo();
                             boda1.calcularCosto();
                             break;
+                        case 4:
+                            boda4.mostrarInfo();
+                            boda4.calcularCosto();
+                            break;
                         default:
                             System.out.println("Opción no válida. Por favor, elija una opción del menú.");
                     }
@@ -74,7 +87,7 @@ public class Main {
                 case 3:
                     System.out.println("--Evento: Concierto\n");
                     System.out.println("Ingrese que tipo de servicio desea Incluir\n");
-                    System.out.println("1) Seguridad \n2)Estand\n3) Ambos\nIngrese una opción:");
+                    System.out.println("1) Seguridad \n2)Estand\n3) Ambos\n4)Ningun servicio\nIngrese una opción:");
                     int opcion3 =leer.nextInt();
                     switch (opcion3){
                         case 1:
@@ -91,6 +104,10 @@ public class Main {
                             System.out.println("Ambos servicios seleccionados");
                             con3.mostrarInfo();
                             con3.calcularCosto();
+                            break;
+                        case 4:
+                            con4.mostrarInfo();
+                            con4.calcularCosto();
                             break;
                         default:
                             System.out.println("Opción no válida. Por favor, elija una opción del menú.");
