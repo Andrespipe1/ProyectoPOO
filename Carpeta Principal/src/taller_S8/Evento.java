@@ -9,11 +9,9 @@ public class Evento extends Reservas{
     }
 
     @Override
-
     public void calcularCosto(){
-        //a=a+b
+        getCostoBase();
     }
-
     public void mostrarInfo(){
         System.out.println("Tipo Evento: "+ tipoEvento);
     }

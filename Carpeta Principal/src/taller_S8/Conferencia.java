@@ -16,7 +16,8 @@ public class Conferencia extends Evento{
     @Override
 
     public void calcularCosto(){
-        //a=a+b
+        getCostoBase();
+        double costoTotal=getCostoBase()+900;
 
     }
     public void mostrarInfo(){
