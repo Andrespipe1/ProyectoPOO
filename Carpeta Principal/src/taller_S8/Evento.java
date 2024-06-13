@@ -15,7 +15,7 @@ public class Evento extends Reservas{
     }
 
     public void mostrarInfo(){
-        //System.out.println("Costo Evento: "+a);
+        System.out.println("Tipo Evento: "+ tipoEvento);
     }
 
 }
