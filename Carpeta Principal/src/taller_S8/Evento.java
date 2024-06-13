@@ -11,9 +11,10 @@ public class Evento extends Reserva{
     private static void calcularCosto(){
         //a=a+b
     }
-
+    
     public static void MostrarInfo(){
-        //System.out.println("Costo Evento: "+a);
+        System.out.println("Tipo Evento: "+ tipoEvento);
     }
 
+    
 }
