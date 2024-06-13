@@ -15,7 +15,7 @@ public class Conciertos extends Evento {
     }
 @Override
     public void calcularCosto(){
-//a+b
+        //a+b
     }
     public void mostrarInfo(){
         //System.out.println("El costo de la conferencia es: "+a);
