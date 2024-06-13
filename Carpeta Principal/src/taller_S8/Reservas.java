@@ -22,7 +22,7 @@ public class Reservas{
         return costoBase;
     }
 
-    public Reservas(int idCliente, String fecha,String nombreCliente,double costoBase){
+    public Reservas(int idCliente,String nombreCliente, String fecha,double costoBase){
         this.idCliente=idCliente;
         this.fecha=fecha;
         this.nombreCliente=nombreCliente;

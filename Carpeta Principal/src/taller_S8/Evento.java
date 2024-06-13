@@ -1,18 +1,20 @@
-public class Evento extends Reserva{
+package taller_S8;
+
+public class Evento extends Reservas{
     public String tipoEvento;
 
-    public Evento(int IdCliente,String fecha,double costoBase,String tipoEvento){
-        super(IdCliente,fecha, costoBase);
+    public Evento(int idCliente,String nombreCliente, String fecha,double costoBase,String tipoEvento){
+        super(idCliente,nombreCliente, fecha,costoBase);
         this.tipoEvento=tipoEvento;
     }
 
     @Override
 
-    private static void calcularCosto(){
+    public void calcularCosto(){
         //a=a+b
     }
 
-    public static void MostrarInfo(){
+    public void MostrarInfo(){
         //System.out.println("Costo Evento: "+a);
     }
 
