@@ -16,10 +16,12 @@ public class Bodas extends Evento {
 
         public void calcularCosto() {
             getCostoBase();
+            double monto = getCostoBase()+1900+decoFlores+musicaLive;
+            System.out.println("\nCosto Total Boda: "+monto+" $");
     }
 
     public void mostrarInfo(){
-        System.out.println("\n"+"------ Boda ------"+"\n"+"El numero de invitados es:"+"\n"+"Precio decoracion de flores: "+"\n"+"Precio Musica en vivo: ");
+        System.out.println("\n"+"------ Boda ------"+"\n"+"El numero de invitados es:"+numinivtados+"Precio decoracion de flores: "+decoFlores+"\n"+"Precio Musica en vivo: "+musicaLive);
     }
 }
 

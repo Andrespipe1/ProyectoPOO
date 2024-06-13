@@ -15,6 +15,8 @@ public class Main {
                     break;
                 case 2:
                     System.out.println("--Evento: Boda\n");
+                    boda1.mostrarInfo();
+                    boda1.calcularCosto();
                     break;
                 case 3:
                     System.out.println("--Evento: Concierto\n");
