@@ -15,6 +15,7 @@ public class Bodas extends Evento {
         }
 
         public void calcularCosto() {
+            //a+b
     }
     public void mostrarInfo(){
         //System.out.println("El costo de la conferencia es: "+a);
