@@ -11,7 +11,9 @@ public class Main {
         Conciertos con2=new Conciertos(1012324515,"Juan Diaz","29/07/2024",250,"Concierto",4565,56,3000,0);
         Conciertos con3=new Conciertos(1518974662,"Juan Almeda","30/08/2024",250,"Concierto",4562,201,3000,100);
 
-        Conferencia cf1=new Conferencia(175427864,"Andres Galo","24/06/2024",100,"Boda",6321,"asdsad",500,300);
+        Conferencia cf1=new Conferencia(175427864,"Andres Galo","24/06/2024",100,"Conferencia",6321,"Conferencia",200,0);
+        Conferencia cf2=new Conferencia(175427864,"Andres Galo","24/06/2024",100,"Conferencia",6321,"Conferencia",0,100);
+        Conferencia cf3=new Conferencia(175427864,"Andres Galo","24/06/2024",100,"Conferencia",6321,"Conferencia",200,100);
         System.out.println("\tSISTEMA DE RESERVAS\t\nSeleccione un tipo de evento");
         while(true) {
             System.out.println("1) Conferencia\n2) Boda\n3) Concierto\n4)Salir\nIngrese una opcion: ");
@@ -19,6 +21,29 @@ public class Main {
             switch (opcion){
                 case 1:
                     System.out.println("--Evento: Conferencia\n");
+
+                    System.out.println("Ingrese que tipo de servicio desea Incluir\n");
+                    System.out.println("1) Catering\n2)Equipo Audiovisual\n3) Ambos\nIngrese una opción:");
+                    int opc1 =leer.nextInt();
+                    switch (opc1){
+                        case 1:
+                            System.out.println("Catering");
+                            cf1.mostrarInfo();
+                            cf1.calcularCosto();
+                            break;
+                        case 2:
+                            System.out.println("Equipo Audiovisual");
+                            cf2.mostrarInfo();
+                            cf2.calcularCosto();
+                            break;
+                        case 3:
+                            System.out.println("Ambos servicios seleccionados");
+                            cf3.mostrarInfo();
+                            cf3.calcularCosto();
+                            break;
+                        default:
+                            System.out.println("Opción no válida. Por favor, elija una opción del menú.");
+                    }
                     break;
 
                 case 2:
