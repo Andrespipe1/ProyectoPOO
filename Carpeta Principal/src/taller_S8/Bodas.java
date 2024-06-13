@@ -1,5 +1,5 @@
 package taller_S8;
-
+import java.util.Scanner;
 public class Bodas extends Evento {
         public int idBoda;
         public int numinivtados;
@@ -15,10 +15,12 @@ public class Bodas extends Evento {
         }
 
         public void calcularCosto() {
-            //a+b
+            getCostoBase();
     }
-    public void mostrarInfo(){
-        //System.out.println("El costo de la conferencia es: "+a);
 
+    public void mostrarInfo(){
+        System.out.println("\n"+"------ Boda ------"+"\n"+"El numero de invitados es:"+"\n"+"Precio decoracion de flores: "+"\n"+"Precio Musica en vivo: ");
     }
 }
+
+
